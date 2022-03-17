@@ -32,15 +32,15 @@
 >
 > **民以食为天，食以胃为先**。
 
-链接和word插入超链接差不多，比如
+插入链接和word插入超链接差不多，比如
 
 [韭菜粿的做法](http://www.meichubang.com/web/201507/89573.html)
 
-
-
 图片
 
-[文字介绍](图片链接)
+![](https://pic.baike.soso.com/ugc/baikepic2/0/ori-20191114163119-61236709_jpg_677_461_359282.jpg/800)
+
+图片支持jpg，png，gif等格式
 
 
 
