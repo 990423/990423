@@ -62,9 +62,11 @@
 | -------- | :---: | -------: |
 | 向左对齐 | 居中  | 向右对齐 |
 
+
+
 特殊语法——脚注
 
-> 编辑人员——奶油多肉葡萄
+> 编辑人员——奶油多肉葡萄超好吃
 
 脚注和插入链接是不一样的
 
@@ -75,11 +77,43 @@
 
 ```
 
-[多肉葡萄](https://www.yebaike.com/15/202008/513813.html)
+链接：[多肉葡萄](https://www.yebaike.com/15/202008/513813.html)
 
-[乌拉](乌拉是一个俄语语气词，通常用来表达强烈的情感。乌拉在俄军队中的运用尤其广泛，是俄国士兵冲锋时喊的口号)
+脚注：[乌拉](乌拉是一个俄语语气词，通常用来表达强烈的情感。乌拉在俄军队中的运用尤其广泛，是俄国士兵冲锋时喊的口号)
 
 显示方框用 ” ```markdown “
 
+特殊语法——代码块
 
+如果在一行文字内需要引用到代码，只要用反引号（``  ）就可以了
 
+你喜欢吃烤完滋滋响的五花肉吗？` 写入代码 ` 是的它超级香，你要来一块吗
+
+在需要高亮的代码块前一行使用三个反引号，同时这三个反引号后面表示代码块所要用的语言
+
+```python
+​```以下是代码块所支持的语言种类
+bash
+clojure，cpp，cs，css
+dart，dockerfile, diff
+erlang
+go，gradle，groovy
+haskell
+java，javascript，json，julia
+kotlin
+lisp，lua
+makefile，markdown，matlab
+objectivec
+perl，php，python
+r，ruby，rust
+scala，shell，sql，swift
+tex，typescript
+verilog，vhdl
+xml
+yaml
+​```
+```
+
+如果想要更换代码高亮的样式，可以在上边的 “ 代码主题 ” 上选自己喜欢的
+
+{哈哈哈|haha}
