@@ -20,7 +20,6 @@
 **文本**
 
 <h1>标题</h1>        标题字大小（h1~h6）
-
 <b>...</b>          粗体字
 
 <strong>...</strong>  粗体字(强调) 
@@ -84,4 +83,4 @@ alt+shift+方向键向下            复制
 
 **另加16进制颜色，但仅仅有16种颜色名可用英文字母，其余的要用16进制值。 **
 
- aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, yellow
+ aqua（浅蓝绿色，水绿色）, black（黑色）, blue（蓝色）, fuchsia（紫红色）, gray（灰色）, green（绿色）, lime（浅绿色）, maroon（褐红色）, navy（深蓝色）, olive（橄榄绿）, purple（紫色）, red（红色）, silver（银色）, teal（蓝绿色）, white（白色）, yellow（黄色）
