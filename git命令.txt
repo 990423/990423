@@ -1,0 +1,63 @@
+reset：重新开始
+
+git branch bugFix：创建新的分支
+git commit：在新的分支里提交东西
+git checkout <name>：切换到新的分支上
+git commit：提交
+git checkout -b <your-branch-name>：创建新的分支同时切换到新创建的分支上
+
+3.
+git merge：合并之前的分支（包含之前所有的提交记录）
+git merge bugFix：将bugFix合并到main
+git checkout bugFix：切换到bugFix
+git merge mian：将main合并到bugFix
+创建新的分支，切换到该分支，提交，切换回main，提交，用git merge 把bugFix合并到main
+4.
+git rebase ：合并分支（复制）
+git rebase main：将想要移动的分支里的工作移动main分支，但是两者是并行的
+git rebase bugFix：将main的东西复制到bugFix分支
+
+新建分支并切换到分支上，提交，切换会main分支，提交，切换回bugFix 复制到main上
+5.
+HEAD是一个对当前检出记录的符号引用，指向你正在的一个基础上进行工作的提交记录。
+HEAD是指向当前分支上最近一次提交记录。
+HEAD通常情况下是指向分支名的，在提交的时候，改变了分支的状态，这个变化是可以通过HEAD变得可见的。
+git checkout C1：切换到C1
+git checkout main：切换到main
+git commit：提交
+git checkout C2：切换到C2
+cat.git/HEAD：查看HEAD的指向
+git symbolic-ref HEAD：查看HEAD指向的一个引用
+分离HEAD是让它指向某个具体的提交记录而不是分支名
+HEAD→main→C1
+HEAD指向main，main指向C1
+git checkout C1：切换到C1
+从bugFix分支中分离出HEAD并让其指向一个提交记录
+
+6.相对引用
+git log：查看提交记录的哈希值
+使用^向上移动提交一个记录
+使用~<num>向上移动多个提交记录
+git checkout main^：切换到main的父节点
+main^相当于“main的父节点”，main^^是main的第二个父节点
+git checkout C1：切换到C1
+git checkout HEAD^：使用HEAD^向上移动
+切换到bugFix的父节点，进入分离HEAD的状态
+7.
+“~”操作符
+操作符后面可以跟数字，数字几就表示向上移动多少次
+git checkout HEAD~4：一次性后退四步
+强制修改分支位置
+使用-f选项让分支指向另一个提交
+git branch -f main HEAD ~3：将main分支强制指向HEAD的第三级父提交
+移动HEAD，main和bugFix到目标所示的位置
+
+
+
+
+
+
+
+
+
+
