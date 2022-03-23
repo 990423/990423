@@ -2,7 +2,7 @@
 ### 本地操作
 
 - **git branch （name）：** 创建新的分支
-- **git commint：** 在分支里提交东西
+- **git commit：** 在分支里提交东西
 - **git checkout （name）：** 切换分支
 - **git checkout -b （your-branch-name）：** 创建新的分支同时切换到新创建的分支上
 - **git merge：** 将新建的分支合并到之前的分支（包括之前所有的提交记录）
