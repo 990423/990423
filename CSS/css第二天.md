@@ -75,7 +75,7 @@ div>p{
 
 3.rgb(125,125,125)转换成十六进制表示要怎么写？写出推理过程
 
-- 
+- RGB色值是以#号开头的6个十六进制数，每个颜色用2位十六进制表示
 
 4.display 有哪些值？分别表示什么意思？
 
@@ -100,13 +100,13 @@ div>p{
 
   2：flex-direction:column; 让元素沿垂直主轴从上到下垂直排列
 
-   3：flex-direction:row-reverse;沿水平主轴让元素从右向左排列
+   3：flex-direction:row-reverse；沿水平主轴让元素从右向左排列
 
 - **flex-wrap 容器内元素的换行(默认不换行)**
 
-  1：flex-wrap: nowrap; (默认)元素不换行,比如：一个div宽度100%，设置此属性，2个div宽度就自动变成各50%；
+  1：flex-wrap: nowrap; (默认)元素不换行，比如：一个div宽度100%，设置此属性，2个div宽度就自动变成各50%；
 
-  2：flex-wrap: wrap; 元素换行,比如：一个div宽度100%，设置此属性，第二个div就在第二行了；
+  2：flex-wrap: wrap; 元素换行，比如：一个div宽度100%，设置此属性，第二个div就在第二行了；
 
 - **justify-content 元素在主轴（页面）上的排列**
 
@@ -135,15 +135,15 @@ div>p{
 
    1：align-content: flex-start; 元素位于容器的开头。各行向弹性盒容器的起始位置堆叠。 
 
-   2:align-content: flex-end; 元素位于容器的结尾。各行向弹性盒容器的结尾位置堆叠。 
+   2：align-content: flex-end; 元素位于容器的结尾。各行向弹性盒容器的结尾位置堆叠。 
 
-   3:align-content: stretch; 元素位于容器的中心。各行向弹性盒容器的中间位置堆叠。 
+   3：align-content: stretch; 元素位于容器的中心。各行向弹性盒容器的中间位置堆叠。 
 
-   4:align-content: center; 默认值。元素被拉伸以适应容器。各行将会伸展以占用剩余的空间。如果剩余的空间是负数，该值等效于'flex-start'。 
+   4：align-content: center; 默认值。元素被拉伸以适应容器。各行将会伸展以占用剩余的空间。如果剩余的空间是负数，该值等效于'flex-start'。 
 
-   5:align-content: space-between;元素位于各行之间留有空白的容器内。各行在弹性盒容器中平均分布。
+   5：align-content: space-between;元素位于各行之间留有空白的容器内。各行在弹性盒容器中平均分布。
 
-  6:align-content: space-around;元素位于各行之前、之间、之后都留有空白的容器内。各行在弹性盒容器中平均分布，两端保留子元素与子元素之间间距大小的一半。如果剩余的空间是负数或弹性盒容器中只有一行，该值等效于'center'。 
+  6：align-content: space-around;元素位于各行之前、之间、之后都留有空白的容器内。各行在弹性盒容器中平均分布，两端保留子元素与子元素之间间距大小的一半。如果剩余的空间是负数或弹性盒容器中只有一行，该值等效于'center'。 
 
   ![](G:\图片\容器属性.png)
 
