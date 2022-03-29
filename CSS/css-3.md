@@ -45,13 +45,119 @@
 
 如果块级元素内部包着也是一个块级元素，我们可以**先将其由块级元素改变为行内块元素，再通过设置行内块元素居中以达到水平居中**
 
+```css
+.parent{
+    text-align:center;
+}
+.child{
+    display:inline-block;
+}
+```
+
+2. 块元素的水平居中（5种方法）
+
+   - **①将元素左右外边距margin-left和margin-right设置为auto**
+
+   ```css
+   .child{
+       width:100px;
+       margin:0 auto;
+   }
+   ```
+
+   - ②使用table+margin
+   - **先将子元素设置为块级表格来显示（类似），再将它设置水平居中；display：table在表现上类似table元素，实现table一样的居中效果，但是宽度为内容宽**
+
+```css
+ .child {
+ display: table;
+ margin: 0 auto;
+ }
+```
+
+- ③ 使用absolute+transform 
+
+- ** 先将父元素设置为相对定位，再将子元素设置为绝对定位，向右移动子元素，移动距离为父容器的一半，最后通过向左移动子元素的一半宽度以达到水平居中。**
+
+  ```css
+  .child {
+   position:absolute;
+   left:50%;
+   transform:translateX(-50%);
+   }
+   .parent {
+   position:relative;
+  ```
+
+  - ④ 使用flex+justify-content 
+
+  -  **通过CSS3中的布局利器flex中的justify-content属性来达到水平居中。**
+
+    ```css
+    .parent {
+     display: flex;
+     justify-content:center;
+     }
+    ```
+
+    - ⑤使用flex+margin
+
+```css
+.parent {
+ display: flex;
+ }
+ .child {
+ margin:0 auto;
+ }
+```
+
+### 垂直居中
+
+1. **单元内联元素垂直居中**
+
+   ```css
+   #box {
+    height: 120px;
+    background: blue;
+    line-height: 120px;
+    border: 2px dashed #f69c55;
+    color: white;
+    }
+   ```
+
+   2. 多行内联元素垂直居中（2种方法）
+
+- ①利用flex布局（flex）
+- 利用 **flex布局实现垂直居中，其中flex-direction: column定义主轴方向为纵向**。但是这种方式在较老的浏览器存在兼容性问题。 
+
+```css
+ .parent { 
+ height: 140px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ border: 2px dashed #f69c55;
+ }
+```
+
+- ②利用表布局（table）
+
+- **利用表布局的vertical-align：middle可以实现子元素的垂直居中**
+- 
 
 
 
-
-
-
-
+```css
+ .parent {
+ display: table;
+ height: 140px;
+ border: 2px dashed #f69c55;
+ }
+ .child {
+ display: table-cell;
+ vertical-align: middle;
+ }
+```
 
 
 
