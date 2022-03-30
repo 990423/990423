@@ -20,6 +20,7 @@
     margin: 0 auto;
     border: 50px solid;
     border-color:transparent transparent yellow transparent;
+}
 ```
 
 
