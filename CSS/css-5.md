@@ -36,3 +36,64 @@
 
 
 3.利用计数器展示 100 以内的所有奇数，样式仿照7.2.4
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./counter.css">
+
+</head>
+<body>
+    <figure class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </figure>
+    
+</body>
+</html>
+```
+
+
+
+```css
+.container{
+    display: flex;
+    justify-content: space-between;
+    counter-reset: n 1;
+    
+}
+.container div{
+    width: 3em;
+    height: 3em;
+    background-color: rosybrown;
+    border-radius: 50%;
+    position: relative;
+    counter-increment: n 2;
+}
+.container div::before{
+    content: 'x';
+    position: absolute;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    width: inherit;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+    content: counter(n);
+
+}
+```
+
