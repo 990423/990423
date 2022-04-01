@@ -60,6 +60,49 @@
         <div></div>
         <div></div>
         <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+       
+  
+      
+     
     </figure>
     
 </body>
@@ -70,8 +113,11 @@
 
 ```css
 .container{
-    display: flex;
-    justify-content: space-between;
+    font-size: 10px;
+    width: 50em;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 1em;
     counter-reset: n 1;
     
 }
@@ -95,5 +141,7 @@
     content: counter(n);
 
 }
+
+
 ```
 
