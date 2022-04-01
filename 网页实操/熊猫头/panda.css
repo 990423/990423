@@ -51,4 +51,8 @@ body{
     box-shadow: -1em -7.2em 0 -0.4em #333;
     
 }
+.panda{
+    background-image: radial-gradient(ellipse at 50% 60%,#333 1.2em, transparent 1.2em),
+    radial-gradient(ellipse at 50% 80%,#333 0.6em,transparent 0.6em);
+}
 
