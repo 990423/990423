@@ -1,0 +1,30 @@
+.container{
+    font-size: 10px;
+    width: 50em;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 1em;
+    counter-reset: n 1;
+    
+}
+.container div{
+    width: 3em;
+    height: 3em;
+    background-color: rosybrown;
+    border-radius: 50%;
+    position: relative;
+    counter-increment: n 2;
+}
+.container div::before{
+    content: 'x';
+    position: absolute;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    width: inherit;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+    content: counter(n);
+
+}
+
