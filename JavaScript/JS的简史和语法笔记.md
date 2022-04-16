@@ -305,7 +305,7 @@ for(initial condition;test condition;alter condition){
 #### 函数
 
 函数就是一组允许在你的代码里随时调用的语句。
-
+函数的真正价值体现在，我们可以把它们当作一种数据类型来使用
 ```js
 function name(arguments){
     statements;
