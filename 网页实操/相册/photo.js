@@ -5,5 +5,5 @@ function showPic(whichpic){
     placeholder.setAttribute("src",source);
    
     var description = document.getElementById("description");
-    description.firstChild.nodeValue = text;
+
 }
